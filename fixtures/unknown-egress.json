@@ -1,0 +1,10 @@
+{
+  "policy": { "mode": "protect", "allowed_hosts": ["api.example.com"], "denied_hosts": [] },
+  "events": [
+    { "type": "process_start", "at_ms": 0, "process": "agent:100:1", "parent": null, "name": "示例 Agent", "protected": true },
+    { "type": "connect", "at_ms": 100, "process": "agent:100:1", "host": "api.example.com", "port": 443, "protocol": "tcp", "content": "unavailable" },
+    { "type": "process_start", "at_ms": 200, "process": "child:101:1", "parent": "agent:100:1", "name": "upload-worker", "protected": false },
+    { "type": "file_read", "at_ms": 300, "process": "child:101:1", "class": "source" },
+    { "type": "connect", "at_ms": 400, "process": "child:101:1", "host": "new-storage.example.net", "port": 443, "protocol": "udp", "content": "unavailable" }
+  ]
+}

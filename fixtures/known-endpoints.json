@@ -1,0 +1,10 @@
+{
+  "policy": { "mode": "protect", "allowed_hosts": ["trae-api-cn.mchost.guru", "zcode.z.ai"], "denied_hosts": [] },
+  "events": [
+    { "type": "process_start", "at_ms": 0, "process": "trae:1", "parent": null, "name": "Trae CN（合成事件）", "protected": true },
+    { "type": "connect", "at_ms": 1, "process": "trae:1", "host": "trae-api-cn.mchost.guru", "port": 443, "protocol": "tcp", "content": "unavailable", "request_path": "/api/ide/v1/knowledgebase/uploadFileIDs" },
+    { "type": "process_start", "at_ms": 2, "process": "zcode:1", "parent": null, "name": "ZCode（合成事件）", "protected": true },
+    { "type": "connect", "at_ms": 3, "process": "zcode:1", "host": "zcode.z.ai", "port": 443, "protocol": "tcp", "content": "unavailable", "request_path": "/api/v1/snapshot/upload-credential" },
+    { "type": "connect", "at_ms": 4, "process": "zcode:1", "host": "dynamic-bucket.example.net", "port": 443, "protocol": "tcp", "content": "unavailable" }
+  ]
+}

@@ -1,0 +1,11 @@
+[workspace]
+members = ["crates/monitor-enforcer", "crates/monitor-core", "crates/monitor-replay", "crates/monitor-runtime", "src-tauri"]
+default-members = ["crates/monitor-core", "crates/monitor-replay", "crates/monitor-runtime"]
+resolver = "2"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+panic = "abort"
+strip = true

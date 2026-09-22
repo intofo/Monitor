@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleIdentifier</key><string>dev.agentmonitor.endpoint</string>
+<key>CFBundleName</key><string>Monitor File Protection</string>
+<key>CFBundleDisplayName</key><string>Monitor File Protection</string>
+<key>CFBundleExecutable</key><string>monitor-enforcer</string>
+<key>CFBundlePackageType</key><string>SYSX</string>
+<key>CFBundleVersion</key><string>1</string>
+<key>CFBundleShortVersionString</key><string>0.1.0</string>
+<key>LSMinimumSystemVersion</key><string>12.0</string>
+<key>NSSystemExtensionUsageDescription</key><string>Monitor checks Agent file access against your approved project directories.</string>
+<key>NSEndpointSecurityEarlyBoot</key><false/>
+</dict></plist>
