@@ -24,3 +24,6 @@ vite.config.ts.timestamp-*
 *.provisionprofile
 __pycache__/
 *.pyc
+
+# Local editor settings
+/.vscode/
