@@ -6,6 +6,10 @@
 
 > **开发中，尚非完整的防泄漏产品。** 实时监测可以使用；系统级拦截已有 Endpoint Security / Network Extension 原型，但规则部署、可信审计回传、实时审批及签名环境联调尚未完成。保存策略或关闭 SIP 都不代表拦截已经生效。
 
+## 软件截图
+
+![Monitor 主界面：本机 Agent 列表与监测开关](docs/screenshots/monitor.png)
+
 ## 功能
 
 - **Agent 发现**：识别常见应用与 CLI，内置图标；支持手动添加程序和独立监测开关。
